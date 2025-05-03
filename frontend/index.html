@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Fan - FURIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Música de fundo -->
+    <audio autoplay loop id="bg-music" volume="0.3">
+        <source src="/frontend/assets/CS.GO.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- Logo da FURIA -->
+    <div class="logo-container">
+        <img src="/frontend/assets/Furia-Logo.gif" alt="Logo FURIA" class="logo">
+    </div>
+
+    <!-- Formulário -->
+    <div class="form-container">
+        <h1>Conhecebo Nossos Fãns</h1>
+        <form id="fan-form">
+            <input type="text" placeholder="Nome completo" name="nome" required>            
+            <input type="text" placeholder="Endereço" name="endereco" required>
+            <input type="text" placeholder="CPF" name="cpf" required>
+            <input type="text" placeholder="País" name="pais" required>
+            <input type="text" placeholder="Cidade e Estádo" name="cidade" required>
+            <input type="text" placeholder="Interesses em e-sports" name="interesses" required>
+            <input type="text" placeholder="Eventos que assistiu (último ano)" name="eventos" required>
+            <input type="text" placeholder="Compras relacionadas (último ano)" name="compras" required>
+            <input type="file" name="documento" required>
+            <input type="url" placeholder="Link de rede social" name="rede_social" required>
+            <input type="url" placeholder="Link de perfil em site de e-sports" name="perfil_esports" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="status-msg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
